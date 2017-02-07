@@ -192,7 +192,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -202,7 +202,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -245,7 +245,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/07/test/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/07/Hexo/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Changjing Zou">
@@ -270,8 +270,8 @@
             
               
                 
-                <a class="post-title-link" href="/2017/02/07/test/" itemprop="url">
-                  test
+                <a class="post-title-link" href="/2017/02/07/Hexo/" itemprop="url">
+                  Hexo和Github pages搭建个人博客系统
                 </a>
               
             
@@ -285,7 +285,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-07T16:14:07+08:00">
                 2017-02-07
@@ -297,6 +297,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/博客/" itemprop="url" rel="index">
+                    <span itemprop="name">博客</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -325,8 +347,20 @@
       
         
           
-            <p>Hello World!!!</p>
-
+            <h1 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境"></a>系统环境</h1><ul>
+<li>Mac</li>
+<li>Node: 我本地安装的是6.2.0的版本 <ul>
+<li><a href="https://nodejs.org/en/download/" target="_blank" rel="external">下载地址</a></li>
+<li><a href="http://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="external">安装教程</a></li>
+</ul>
+</li>
+<li>Git: 我本地安装的是2.10.0的版本<ul>
+<li><a href="https://git-scm.com/downloads" target="_blank" rel="external">下载地址</a></li>
+<li><a href="http://gitref.org/zh/index.html" target="_blank" rel="external">git参考教程</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ sudo npm install hexo-cli -g <span class="comment"># 这里可能回遇到文件访问权限的问题，如果遇到这个问题，请在前面加上sudo</span></div><div class="line">$ hexo init hexo-blog</div><div class="line">$ <span class="built_in">cd</span> hexo-blog</div><div class="line">$ hexo generate <span class="comment"># 可以简写成hexo g</span></div><div class="line"><span class="comment"># 需要安装hexo-server：sudo npm install hexo-server --save</span></div><div class="line">$ hexo server <span class="comment"># 可以简写成hexo s</span></div></pre></td></tr></table></figure>
           
         
       
@@ -406,7 +440,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-07T15:59:16+08:00">
                 2017-02-07
@@ -530,18 +564,25 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives">
                 <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
 
           
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">categories</span>
+              
+            </div>
+          
 
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">Tags</span>
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -589,7 +630,7 @@
 
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
