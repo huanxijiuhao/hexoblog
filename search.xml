@@ -3,13 +3,6 @@
   
     
     <entry>
-      <title><![CDATA[Hello World]]></title>
-      <url>%2F2017%2F02%2F08%2Fhello-world%2F</url>
-      <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-    </entry>
-
-    
-    <entry>
       <title><![CDATA[Hexo和Github pages搭建个人博客系统]]></title>
       <url>%2F2017%2F02%2F07%2FHexo%2F</url>
       <content type="text"><![CDATA[系统环境 Mac Node: 我本地安装的是6.2.0的版本 下载地址 安装教程 Git: 我本地安装的是2.10.0的版本 下载地址 git参考教程 安装Hexo123456$ sudo npm install hexo-cli -g # 这里可能回遇到文件访问权限的问题，如果遇到这个问题，请在前面加上sudo$ hexo init hexo-blog$ cd hexo-blog$ hexo generate # 可以简写成hexo g# 需要安装hexo-server：sudo npm install hexo-server --save$ hexo server # 可以简写成hexo s]]></content>
