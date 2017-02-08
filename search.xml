@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[Hexo和Github pages搭建个人博客系统]]></title>
       <url>%2F2017%2F02%2F07%2FHexo%2F</url>
-      <content type="text"><![CDATA[系统环境 Mac Node: 我本地安装的是6.2.0的版本 下载地址 安装教程 Git: 我本地安装的是2.10.0的版本 下载地址 git参考教程 安装Hexo123456$ sudo npm install hexo-cli -g # 这里可能回遇到文件访问权限的问题，如果遇到这个问题，请在前面加上sudo$ hexo init hexo-blog$ cd hexo-blog$ hexo generate # 可以简写成hexo g# 需要安装hexo-server：sudo npm install hexo-server --save$ hexo server # 可以简写成hexo s]]></content>
+      <content type="text"><![CDATA[系统环境 Mac Node: 我本地安装的是6.2.0的版本 下载地址 安装教程 Git: 我本地安装的是2.10.0的版本 下载地址 git参考教程 安装Hexo123456$ sudo npm install hexo-cli -g # 这里可能回遇到文件访问权限的问题，如果遇到这个问题，请在前面加上sudo$ hexo init hexo-blog$ cd hexo-blog$ hexo generate # 可以简写成hexo g# 需要安装hexo-server：sudo npm install hexo-server --save$ hexo server # 可以简写成hexo s 在浏览器中输入http://localhost:4000/，结果呈现如下图 Hexo主题设置参考链接 主题列表 主题排行 安装主题当前目录为Hexo目录 123$ hexo clean # 清除缓存文件 (db.json) 和已生成的静态文件 (public)。$ cd themes$ git clone git@github.com:iissnan/hexo-theme-next.git 使用主题修改Hexo目录下的_config.yml配置文件中的theme属性，将其设置为hexo-theme-next。 Github pages使用方式请参考官网参考链接 Hexo部署到Github pages首先修改修改Hexo目录下_config.yml配置文件，修改如下： 1234deploy: type: git repo: git@github.com:username/username.github.io.git branch: master 然后在命令行中执行1$ hexo d # 需要在Hexo目录下先安装工具 npm install hexo-deployer-git --save 部署完成。部署完成之后在github中查看当前项目，会出现如下图： 高级使用技巧Hexo的使用Hexo命令Hexo命令列表 主题个性化设置以hexo-theme-next为例子 常用的设置主题常用的设置可以参考设置，主要有以下几个设置： 添加标签页面 添加分类页面 设置字体 设置代码高亮主题 侧边栏社交链接 开启打赏功能 设置友情链接 多说评论显示UA 设置腾讯404公益页面 第三方服务第三方服务主要扩展了博客的功能，服务列表，主要包括以下几个功能： 评论 多说 Disqus 数据统计和分析 百度统计 Google分析 腾讯分析 CNZZ分析 不蒜子分析 内容分享服务 JiaThis 百度分享 多说分享 AddThis 搜索服务 Swiftype 微搜索 Local Search Algolia 其他服务 MathJax Google Webmaster tools 多说热评文章]]></content>
     </entry>
 
     
